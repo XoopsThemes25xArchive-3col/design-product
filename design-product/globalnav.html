@@ -1,0 +1,67 @@
+<div id="xo-globalnav" class="x2-nl x2-navigation"><ul>
+		<!-- menu en mode anonyme -->
+		<li><a href="<{xoAppUrl /}>" accesskey="a"  title="Accueil">Accueil</a></li>
+		<{if !$xoops_isuser}>
+		<li><a href="<{xoAppUrl modules/smartsection/}>" accesskey="" title="Modules 1a">Module 1a</a><!--<![endif]-->
+				<!--[if lte IE 6]><table><tr><td><![endif]-->
+                <ul>
+                  <li><a href="<{xoAppUrl modules/smartsection/mapage.php}>" title="Description page">MaPage1</a></li>
+                  <li><a href="<{xoAppUrl modules/smartsection/mapage.php}>" title="Description page">MaPage2</a></li>
+                  <li><a href="<{xoAppUrl modules/smartsection/mapage.php}>" title="Description page">MaPage3</a></li>
+                  <li><a href="<{xoAppUrl modules/smartsection/mapage.php}>" title="Description page">MaPage4</a></li>
+                  <li><a href="<{xoAppUrl modules/smartsection/mapage.php}>" title="Description page">MaPage5</a></li>                                    
+                </ul></li>
+				<!--[if lte IE 6]></td></tr></table></a><![endif]-->
+		<li><a href="<{xoAppUrl modules/google/}>" accesskey="" title="Modules 2a">Module 2a</a></li>
+		<{else}>
+		<!-- menu en mode enregistré -->
+		<li class="x2-label">Navigation</li>
+		<li><a href="<{xoAppUrl modules/news/}>" accesskey=""  title="Modules 1">Module 1<!--[if IE 7]><!--></a><!--<![endif]-->
+				<!--[if lte IE 6]><table><tr><td><![endif]-->
+                <ul>
+                  <li><a href="<{xoAppUrl modules/news/mapage.php}>" title="Description page">MaPage1</a></li>
+                  <li><a href="<{xoAppUrl modules/news/mapage.php}>" title="Description page">MaPage2</a></li>
+                  <li><a href="<{xoAppUrl modules/news/mapage.php}>" title="Description page">MaPage3</a></li>
+                  <li><a href="<{xoAppUrl modules/news/mapage.php}>" title="Description page">MaPage4</a></li>
+                  <li><a href="<{xoAppUrl modules/news/mapage.php}>" title="Description page">MaPage5</a></li>                                   
+                </ul></li>
+				<!--[if lte IE 6]></td></tr></table></a><![endif]-->
+		<li><a href="<{xoAppUrl modules/newbb/}>" accesskey=""  title="Modules 2">Module 2</a></li>
+		<li><a href="<{xoAppUrl modules/xcgal/}>" accesskey="" title="Modules 3">Module 3<!--[if IE 7]><!--></a><!--<![endif]-->
+				<!--[if lte IE 6]><table><tr><td><![endif]-->
+				<ul>
+                  <li><a href="<{xoAppUrl modules/xcgal/mapage.php}>" title="Description page">Gallery1</a></li>
+                  <li><a href="<{xoAppUrl modules/xcgal/mapage.php}>" title="Description page">Gallery2</a></li>
+                  <li><a href="<{xoAppUrl modules/xcgal/mapage.php}>" title="Description page">Gallery3</a></li>
+                  <li><a href="<{xoAppUrl modules/xcgal/mapage.php}>" title="Description page">Gallery4</a></li>
+                  <li><a href="<{xoAppUrl modules/xcgal/mapage.php}>" title="Description page">Gallery5</a></li>                                   
+                </ul></li>
+				<!--[if lte IE 6]></td></tr></table></a><![endif]-->
+		<li><a href="<{xoAppUrl modules/smartmedia/}>" accesskey="" title="Modules 4">Module 4<!--[if IE 7]><!--></a><!--<![endif]-->
+				<!--[if lte IE 6]><table><tr><td><![endif]-->
+                <ul>
+                  <li><a href="<{xoAppUrl modules/smartmedia/mapage.php}>" title="Description page">Media1</a></li>
+                  <li><a href="<{xoAppUrl modules/smartmedia/mapage.php}>" title="Description page">Media2</a></li>
+                  <li><a href="<{xoAppUrl modules/smartmedia/mapage.php}>" title="Description page">Media3</a></li>
+                  <li><a href="<{xoAppUrl modules/smartmedia/mapage.php}>" title="Description page">Media4</a></li>
+                  <li><a href="<{xoAppUrl modules/smartmedia/mapage.php}>" title="Description page">Media5</a></li>                                    
+                </ul></li>
+				<!--[if lte IE 6]></td></tr></table></a><![endif]-->
+		<li><a href="<{xoAppUrl modules/addresses/}>" accesskey="" title="Modules 5">Module 5</a></li>
+		
+		<{if $xoops_isadmin}>
+		<!-- lien supplémentaire si je suis administrateur -->
+		<li><a href="<{xoAppUrl modules/xoopsinfo/}>" accesskey="" title="Modules 6">Module 6</a></li>
+		<li><a href="<{xoAppUrl modules/system/admin.php}>" accesskey="p" title="Administration">Administration<!--[if IE 7]><!--></a><!--<![endif]-->
+				<!--[if lte IE 6]><table><tr><td><![endif]-->
+                <ul>
+                  <li><a rel="external" href="<{xoAppUrl modules/system/admin.php?fct=preferences}>" title="Préférences">Préférences</a></li>
+                  <li><a rel="external" href="<{xoAppUrl modules/system/admin.php?fct=preferences&op=show&confcat_id=1}>" title="Préférences Générales">Générales</a></li>
+				  <li><a rel="external" href="<{xoAppUrl modules/system/admin.php?fct=modulesadmin}>" title="Modules">Modules</a></li>
+                  <li><a rel="external" href="<{xoAppUrl modules/system/admin.php?fct=images}>" title="Gestionnaire d'images">Images</a></li>
+                </ul></li>
+				<!--[if lte IE 6]></td></tr></table></a><![endif]-->
+		<{/if}>
+		<{/if}>
+		<li><a href="<{xoAppUrl modules/contact/}>" accesskey="c" title="Contact">Contact</a></li>
+	</ul></div>
